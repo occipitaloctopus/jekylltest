@@ -7,15 +7,14 @@
   	<a-marker preset="hiro">
       <a-scene>
   <a-assets>
-    <img id="my-image" src="image.png">
-  </a-assets>
+  <img id="texture" src="texture.png">
+</a-assets>
 
-  <!-- Using the asset management system. -->
-  <a-curvedimage src="#my-image" height="3.0" radius="5.7" theta-length="72"
-                 rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage>
+<!-- Basic cone. -->
+<a-cone color="tomato" radius-bottom="2" radius-top="0.5"></a-cone>
 
-  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-curvedimage src="another-image.png"></a-curvedimage>
+<!-- Textured box. -->
+<a-cone src="#texture"></a-cone>
 </a-scene>      
     </a-marker>
   	<a-entity camera></a-entity>
